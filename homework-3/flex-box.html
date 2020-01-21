@@ -1,0 +1,82 @@
+<html>
+    <head>
+    <title>Flex box</title>
+    <style>
+        body {
+            margin: 0;
+            background-color:#428a66;
+        }
+        .up-bar {
+            position:fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 60px;
+            background-color: #004c62 ;
+         
+        }
+        
+        .down-bar {
+            position: fixed;
+            justify-content: flex-end;
+            top: 0px;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 60px;
+            background-color: #995c00;
+            margin-top: 729px;
+            
+            
+        
+    
+        }
+        .container{
+            display: flex;
+        height: 100vh;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+        }
+           
+        
+        .box1 {
+
+            
+            width: 800px;
+            height: 730px;
+            top: 0;
+            background-color: grey;
+            position: relative;
+            flex-wrap: wrap;
+            margin-left: 880px;
+          
+        }
+
+        .box0 {
+            
+            width: 800px;
+            height: 730px;
+            background-color:#006600;
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+    
+        
+    </style>
+
+    </head>
+    <body>
+        <div class="up-bar"></div>
+        <div class="down-bar"></div>
+        <div class="container">
+            <div class="box0"></div>
+            <div class="box1"></div>
+            
+        </div>
+    </body>
+
+</html>
