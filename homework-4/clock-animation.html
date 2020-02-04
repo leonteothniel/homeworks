@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>Clock animation</title>
+    <style> 
+    body {
+        background-color: darkgrey;
+    }
+    .container {
+        background-color: rgb(63, 143, 189);
+        width: 200px;
+        height: 200px;
+        border-radius: 60px;
+        margin: 0 auto;
+        box-shadow: 4px 4px 6px -1px #000000;
+
+    }
+    .element1 {
+        background-color: rgba(146, 57, 21, 0.425);
+        width: 8px;
+        height: 98px; 
+        margin: 0 auto;
+        border-radius: 20px;
+        position: relative;
+        animation: animate 4320s linear infinite;
+        transform-origin: bottom;
+        z-index: 1;
+        
+    }
+    .element2 {
+        background-color: rgb(28, 43, 179);
+        width: 6px;
+        height: 98px; 
+        margin: 0 auto;
+        border-radius: 20px;
+        position: absolute;
+        animation: animate 360s linear infinite;
+        transform-origin: bottom;
+        z-index: 2;
+        
+    }
+    .element3 {
+        background-color: wheat;
+        width: 2.5px;
+        height: 98px; 
+        margin: 0 auto;
+        border-radius: 20px;
+        position: absolute;
+        animation: animate 60s linear infinite;
+        transform-origin: bottom;
+        z-index: 3;
+        
+    }    
+       @keyframes animate {
+           0% {
+               transform: rotate(0deg);
+           }
+           100% {
+               transform: rotate(360deg);
+           }
+       }
+       .twelve {
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 20px;
+           position: relative;
+           margin-top: -90px;
+           margin-left: 88px;
+           z-index: 0;
+           
+       }
+       .three {
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 20px;
+           margin-left: 177px;
+           margin-top: 49px;
+       }
+       .six {
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 20px;
+           margin-left: 96;
+           margin-top: 69;
+       }
+       .nine {
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 20px;
+           margin-top: -110px;
+           margin-left: 10px;
+       }
+       
+    
+       span {
+    display: block;
+    position: absolute;
+    border-radius: 20px;
+    margin: 92px;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    z-index: 4;
+
+}
+
+
+
+   
+
+  
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <span></span>
+    <div class="element1">
+    <div class="element2">
+    <div class="element3">
+        </div>
+    </div>
+    </div>
+    
+    <div class="twelve">12</div>
+    <div class="three">3</div>
+    <div class="six">6</div>
+    <div class="nine">9</div>
+
+   
+</body>
+</html>
