@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Random names</title>
+    <script>
+     
+        const firstNames = ['John', 'Matthew', 'Thomas', 'Christian', 'David'];
+        const lastNames = ['Smith', 'Pitt', 'Cruise', 'Robinson'];
+        
+        const getRandomNames = () =>
+        `${firstNames[Math.floor(Math.random() * firstNames.length)]} ${lastNames[Math.floor(Math.random() * lastNames.length)]}`;
+        console.log(getRandomNames());
+    </script>
+</head>
+</html> 
